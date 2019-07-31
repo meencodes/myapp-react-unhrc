@@ -72,10 +72,10 @@ class App extends Component {
   componentDidMount = () => {
     $(window).on('scroll', function () {
       if ($(window).scrollTop()) {
-        $('.AppLayout').addClass('black');
+        $('.AppLayout').addClass('white');
       }
       else {
-        $('.AppLayout').removeClass('black');
+        $('.AppLayout').removeClass('white');
       }
     })
   }
