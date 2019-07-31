@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url(./fonts/AmeenDev.ttf);
+}
+/*--------------เมนู----------------------*/
+
+.Header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  transition: all 0.2s ease-out;
+}
+
+.AppLayout {
+  padding: 5vh 5vw;
+  display: flex;
+  align-self: center;
+  background: rgba(26,26,26,0);
+  transition: all 0.2s ease-out;
+  justify-content: space-between;
+  font-size: 22px;
+  font-Family: 'MyFont'
+}
+
+.Logo {
+  display: flex;
+}
+
+.black {
+  background: rgba(26,26,26,0.9);
+}
+
+
+/*---------------------------------------------*/
+
+.App {
+  background: rgba(26,26,26,0.9);
+}
+
+a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(250,235,00);
+}
+
+button {
+  cursor: pointer;
+  fill: white;
+  color: white;
+  border: 1px solid white;
+  padding: .35rem;
+  background: transparent;
+  line-height: 0;
+  margin-right: 10px;
+  border-radius: 100%; 
+}
+button:hover {
+  border-color: rgb(250,235,00);
+  fill: rgb(250,235,00);
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  transition: all 0.2s ease-out;
+}
+
+.info1 {
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  transition: transform 6000ms ease-in-out;
+  font-family: "object-fit: cover;";
+
+  animation: zoomin 6000ms ease-in infinite;
+}
+
+@-webkit-keyframes zoomin {
+  100% {transform: scale(1.1);}
+}
+@keyframes zoomin {
+  100% {transform: scale(1.1);}
+} /*End of Zoom in Keyframes */
+
+.jss905 {
+  color: white;
+  right: 100vw;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(100%) translateY(100%) rotate(-90deg);
+  padding-top: 1.9vw;
+  white-space: nowrap;
+  padding-left: 5vh;
+  transform-origin: top left;
+  font-size: 18px;
+  font-family: Myfont;
+}
+
+.message {
+  font-size: 10vmin;
+  font-family: Myfont;
+  line-height: .85;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+}
+
+.action_icon {
+  margin: 1rem 1.75rem 1rem 1rem;
+  display: inline-block;
+  z-index: 0;
+  position: relative;
+  line-height: 0;
+
+  align-items: center;
+}
+.action_icon::before {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  padding: 1rem;
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: white;
+  transition: transform 0.2s linear;
+  border-radius: 100%;
+}
+.action_message {
+  white-space: nowrap;
+  font-family: Myfont;
+  font-size: 22px;
+}
+
+.action:hover .action_icon:before{
+  transform: translate(-50%,-50%) scale(1.1);
+  background: rgb(250,235,00);
+}
+
+/*-----------------เกี่ยวกับเรา------------------------*/
+
+.about {
+  z-index: 0;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.jss115 {
+  font-family: Myfont;
+  line-height: 1.25;
+  font-size: 1.75rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.jss116 {
+  margin: 0 auto;
+  padding: 5vw 5vw 2vw 5vw;
+  max-width: 1500px;
+}
+
+.jss135 {
+  opacity: 0;
+  transition: 1s opacity linear;
+}
+.jss136 {
+  opacity: 1;
+}
+
+/*--------------------ข่าวสาร-----------------------------*/
+
+.news {
+  z-index: 0;
+  position: relative;
+}
+.jss118 {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+}
